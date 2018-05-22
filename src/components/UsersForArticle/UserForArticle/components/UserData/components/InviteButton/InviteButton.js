@@ -17,6 +17,7 @@ InviteButton.defaultProps = {
 };
 
 InviteButton.propsType = {
-isFriend: PropTypes.boolean
+  isFriend: PropTypes.boolean
 }
+
 export default InviteButton

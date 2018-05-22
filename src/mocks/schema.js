@@ -8,14 +8,14 @@ const RootQuery = `
     `
 const SchemaDefinition = `
     schema {
-    query: RootQuery
+        query: RootQuery
     }
     `
 export default makeExecutableSchema({
-typeDefs: [
-SchemaDefinition,
-RootQuery,
-...profileInfo,
-],
-resolvers: {},
+    typeDefs: [
+        SchemaDefinition,
+        RootQuery,
+        ...profileInfo,
+    ],
+    resolvers: {},
 })

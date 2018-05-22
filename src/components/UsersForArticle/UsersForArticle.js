@@ -9,12 +9,12 @@ const UsersForArticle = () => (
     query={gql`
       {
         profileInfos (size: 4) {
-              id
-              name
-              age
-              website
-              isFriend
-              }
+          id
+          name
+          age
+          website
+          isFriend
+          }
       }
     `}
   >
@@ -25,7 +25,6 @@ const UsersForArticle = () => (
     <div className="mocked-users">
       {
       data.profileInfos.map(item => (
-
         <div key={item.id} className= "mocked-user">
           <UserForArticle {...item} />
         </div>

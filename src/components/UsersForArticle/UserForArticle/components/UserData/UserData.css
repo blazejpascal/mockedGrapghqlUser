@@ -4,7 +4,6 @@ height: 100%;
 display: flex;
 flex-direction: column;
 align-items: center;
-
 }
 
 .user-data__photo {
@@ -12,10 +11,6 @@ width: 100px;
 height: 100px;
 margin-bottom: 30px;
 margin-top: 20px
-}
-
-.user-data__data {
-
 }
 
 .user-data__data--name {

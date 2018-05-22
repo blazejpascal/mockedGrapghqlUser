@@ -5,8 +5,8 @@ import mocks from './mocks'
 
 function createMockLink() {
     addMockFunctionsToSchema({
-    schema,
-    mocks,
+        schema,
+        mocks,
     })
     return new SchemaLink({schema})
 }

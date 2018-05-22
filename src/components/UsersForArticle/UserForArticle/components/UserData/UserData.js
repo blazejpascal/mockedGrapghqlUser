@@ -5,7 +5,6 @@ import './UserData.css';
 
 const UserData = props => {
   const { ...data} = props;
-  console.log(data)
 
   return (
     <div className="user-data__container">
@@ -18,4 +17,5 @@ const UserData = props => {
     </div>
   );
 };
+
 export default UserData;
