@@ -9,8 +9,9 @@ profileInfos: (root, {size}) => new MockList(size)
 }),
 
 profileInfo: () => ({
-name: pickRandomFromArray(names),
+/* By powrócic do dostarczania imienia i nazwiska z biblioteki casual należy usunąć linie 3,4,14 i odkomentować linię poniżej */
 //name: casual.full_name,
+name: pickRandomFromArray(names),
 age:  casual.integer( 10, 100),
 website: casual.url,
 isFriend: casual.coin_flip,
