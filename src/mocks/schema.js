@@ -1,4 +1,4 @@
-import  { makeExecutableSchema } from 'graphql-tools'
+import { makeExecutableSchema } from 'graphql-tools'
 import profileInfo from './profileInfo/profileInfo.type'
 
 const RootQuery = `
@@ -12,10 +12,10 @@ const SchemaDefinition = `
     }
     `
 export default makeExecutableSchema({
-    typeDefs: [
-        SchemaDefinition,
-        RootQuery,
-        ...profileInfo,
-    ],
-    resolvers: {},
+  typeDefs: [
+    SchemaDefinition,
+    RootQuery,
+    ...profileInfo,
+  ],
+  resolvers: {},
 })

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import './InviteButton.css';
 
 const InviteButton = props => {
@@ -12,12 +11,5 @@ const InviteButton = props => {
     </div>
   );
 };
-InviteButton.defaultProps = {
-  isFriend: false,
-};
-
-InviteButton.propsType = {
-  isFriend: PropTypes.boolean
-}
 
 export default InviteButton

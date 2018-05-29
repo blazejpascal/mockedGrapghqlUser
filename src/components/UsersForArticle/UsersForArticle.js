@@ -5,7 +5,7 @@ import UserForArticle from './UserForArticle/UserForArticle';
 import './UsersForArticle.css'
 
 const UsersForArticle = () => (
-<Query
+  <Query
     query={gql`
       {
         profileInfos (size: 4) {
@@ -21,18 +21,18 @@ const UsersForArticle = () => (
     {({ loading, error, data }) => {
       if (loading) return <p>Loading...</p>;
       if (error) return <p>Error </p>;
-  return (
-    <div className="mocked-users">
-      {
-      data.profileInfos.map(item => (
-        <div key={item.id} className= "mocked-user">
-          <UserForArticle {...item} />
+      return (
+        <div className="mocked-users">
+          {
+            data.profileInfos.map(item => (
+              <div key={item.id} className="mocked-user">
+                <UserForArticle {...item} />
+              </div>
+            ))}
         </div>
-      ))}
-    </div>
-  )
-}}
-</Query>
+      )
+    }}
+  </Query>
 )
 
 export default UsersForArticle

@@ -8,11 +8,11 @@ const client = createApolloClient()
 class App extends Component {
   render() {
     return (
-    <ApolloProvider client={client}>
-      <div className="App">
-         <UsersForArticle />
-      </div>
-     </ApolloProvider>
+      <ApolloProvider client={client}>
+        <div className="App">
+          <UsersForArticle />
+        </div>
+      </ApolloProvider>
     );
   }
 }

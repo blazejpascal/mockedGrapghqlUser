@@ -1,8 +1,8 @@
 .invite-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #888;
-  width: 160px;
-  height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #888;
+    width: 160px;
+    height: 24px;
 }

@@ -1,4 +1,4 @@
- const profileInfo= `
+const profileInfo = `
     type profileInfo {
         id: ID!
         name: String!
@@ -7,4 +7,5 @@
         isFriend: Boolean!
     }
  `
+
 export default [profileInfo]
